@@ -1,0 +1,141 @@
+body {
+	background-color: #fff;
+	font-family: Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+.title {
+	margin: 0;
+	font-style: italic;
+	text-align: left;
+	padding: 0;
+}
+
+.index .title {
+	display: block;
+	float: left;
+	width: 60%;
+}
+
+.title img {
+	position: absolute;
+	top: 0px;
+	left: 25%;
+	z-index: -1;
+}
+
+h1 {
+	font-size: 3em;
+	padding: 0 0.8em;
+}
+
+.index h1 {
+	padding: 160px 8em 180px 2em;
+	float: left;
+}
+
+.nav {
+	float: left;
+	width: 30%;
+	margin: 0 2%;
+	padding: 13% 2%;
+}
+
+h1 a,
+h1 a:visited {
+	text-decoration: none;
+	color: #F00000;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+ul {
+	list-style: none;
+}
+
+ul ul {
+	list-style: none;
+}
+
+ul ul li:before {
+	content: "—";
+}
+
+.text {
+	padding-bottom: 2em;
+	padding: 0 2em 2em;
+	width: 75%;
+	max-width: 35em;
+	line-height: 1.2em;
+}
+
+.text img {
+	width: 100%;
+}
+
+.footer {
+	clear: both;
+	width: 100%;
+}
+
+.footer ul,
+.footer li {
+	display: inline;
+	list-style: none;
+	padding: 1em;
+}
+
+.footer a,
+.footer a:visited {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	text-decoration: none;
+	color: #000;
+	font-weight: normal;
+}
+
+img.gallery {
+	display: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #F00000;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+
+@media screen and (max-width: 640px) {
+	.title,
+	.index .title,
+	h1,
+	.index h1,
+	.nav,
+	.text,
+	.footer {
+		float: none;
+		width: auto;
+		padding-right: 0;
+		margin-right: 0;
+	}
+	.text {
+		padding-right: 1em;
+	}
+	.index h1 {
+		padding-right: 50%;
+		padding-left: 1.2em;
+	}
+	.title img {
+		left: 37%;
+	}
+}
